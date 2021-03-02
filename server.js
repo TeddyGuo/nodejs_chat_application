@@ -17,8 +17,7 @@ io.on("connection", function () {
 });
 
 /* Remote Mongodb connection */
-// replace "@" char to be "%40"
-var dbUrl = "mongodb+srv://<username>:<password>@<clustername>.deusi.mongodb.net/<db>?retryWrites=true&w=majority";
+// var dbUrl = "mongodb+srv://<username>:<password>@<clustername>.deusi.mongodb.net/<db>?retryWrites=true&w=majority";
 mongoose.connect(dbUrl, {useNewUrlParser: true, useUnifiedTopology: true});
 const db = mongoose.connection;
 
